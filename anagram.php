@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 An anagram is word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. For example, the word anagram can be rearranged into "nag a ram".
 
 Example
@@ -26,10 +26,10 @@ function is_anagram_without_inbuild_function($string1, $string2){
 	return ($pharse1===$pharse2)?1:"";
 }
 
-/**
+/*
 count_chars — Return information about characters used in a string
 http://php.net/manual/en/function.count-chars.php
-**/
+*/
 function is_anagram($string1, $string2){
 	return (count_chars($string1, 1) == count_chars($string2, 1));
 }
